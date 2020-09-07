@@ -28,7 +28,7 @@ parser.add_argument('--weights_path', type=str, default='checkpoints/yolov3_ckpt
 parser.add_argument('--class_path', type=str, default='./scripts/data/classes.txt', help='path to class label file')
 parser.add_argument('--conf_thres', type=float, default=0.8, help='object confidence threshold')
 parser.add_argument('--nms_thres', type=float, default=0.4, help='iou thresshold for non-maximum suppression')
-parser.add_argument('--batch_size', type=int, default=10, help='size of the batches')
+parser.add_argument('--batch_size', type=int, default=50, help='size of the batches')
 parser.add_argument('--n_cpu', type=int, default=0, help='number of cpu threads to use during batch generation')
 parser.add_argument('--img_size', type=int, default=416, help='size of each image dimension')
 parser.add_argument('--sampels_number', type=float, default=9000, help='number of sampels to output')
@@ -160,7 +160,7 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
     # Draw bounding boxes and labels of detections
     if detections is not None:
 
-        if opt.output_type == 'text' :
+        if opt.output_type == 'text':
             # for labels to text file
             detections[:, 0] = ((p1_x + p2_x + p3_x + p4_x) / 4)
             detections[:, 1] = ((p1_y + p2_y + p3_y + p4_y) / 4)
@@ -181,8 +181,7 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
             #np.savetxt("meta/" + path.replace(".png", ".txt").replace(".jpg", ".txt").replace(
             #    opt.image_folder, ''), out, fmt='%.2f', delimiter=' ', header='YOLO_OBB')
 
-
-        elif opt.output_type == 'image' or opt.output_type == 'text':
+        if opt.output_type == 'image' or opt.output_type == 'text':
             unique_labels = labels.cpu().unique()
             n_cls_preds = len(unique_labels)
             bbox_colors = random.sample(colors, n_cls_preds)
@@ -215,14 +214,14 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
                     bbox={"color": color, "pad": 0},
                 )
 
-    if opt.output_type == 'image' or opt.output_type == 'text':
+    """if opt.output_type == 'image' or opt.output_type == 'text':
         # Save generated image with detections
         plt.axis("off")
         plt.gca().xaxis.set_major_locator(NullLocator())
         plt.gca().yaxis.set_major_locator(NullLocator())
         plt.savefig("./detect_results/%d.png" % (img_i), bbox_inches="tight", pad_inches=0.0)
         #plt.show()
-        plt.close()
+        plt.close()"""
 
 
 

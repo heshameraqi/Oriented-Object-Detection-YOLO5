@@ -1,7 +1,7 @@
-# PyTorch-YOLOv3-OBB
-Get the model checkpoint from: https://drive.google.com/file/d/13XZCTY5FSHIOMsWjiKbhM1MBqWNHtO07/view?usp=sharing
+# yolo-obb-roadway-features-sin2-cos2
 Minimal implementation of YOLOv3 in PyTorch upgraded to support oriented bounding boxes detection (OBB).
 
+Get the model checkpoint from: https://drive.google.com/file/d/13XZCTY5FSHIOMsWjiKbhM1MBqWNHtO07/view?usp=sharing
 Dataset download link: https://drive.google.com/file/d/1N3Q8Rehgyxjc7wwpKR3UA9MXndhs80o0/view?usp=sharing
 Dataset annotation tool: https://github.com/heshameraqi/labelImg_OBB
 

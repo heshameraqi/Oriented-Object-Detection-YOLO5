@@ -1,0 +1,140 @@
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.35556144656535366
++ Class '1' (marking) - AP: 0.5491956690015517
++ Class '2' (right barriers) - AP: 0.52957042499587
++ Class '3' (left barriers) - AP: 0.92942285554353
++ Class '4' (light pole) - AP: 0.597780036586449
++ Class '5' (right curb) - AP: 0.46573564963931224
++ Class '6' (left curb) - AP: 0.6456411116735807
++ Class '7' (fence) - AP: 0.3257460648525142
++ Class '8' (building) - AP: 0.2646909500795259
++ Class '9' (billboard) - AP: 0.5252787435179342
++ Class '10' (pedestrian) - AP: 0.36224570191566724
++ Class '11' (car) - AP: 0.7534253666892834
++ Class '12' (bus) - AP: 0.0
++ Class '13' (motorcycle) - AP: 0.39135106439454265
++ Class '14' (heavy vehicle) - AP: 0.3864605775194902
++ Class '15' (public transportation) - AP: 0.6043513110908023
++ Class '16' (tree) - AP: 0.38165738955600437
+mf1: 0.10831271659742303
+mAP: 0.4745949625659654
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.3413096999717215
++ Class '1' (marking) - AP: 0.6040006133057105
++ Class '2' (right barriers) - AP: 0.5361363880205602
++ Class '3' (left barriers) - AP: 0.8958524900702627
++ Class '4' (light pole) - AP: 0.6029805258199887
++ Class '5' (right curb) - AP: 0.49484810901513837
++ Class '6' (left curb) - AP: 0.6606579356953434
++ Class '7' (fence) - AP: 0.34451353738221424
++ Class '8' (building) - AP: 0.3001724181136456
++ Class '9' (billboard) - AP: 0.5463503309173543
++ Class '10' (pedestrian) - AP: 0.397147004424078
++ Class '11' (car) - AP: 0.7770682462410352
++ Class '12' (bus) - AP: 0.002631578947368421
++ Class '13' (motorcycle) - AP: 0.4242198157329088
++ Class '14' (heavy vehicle) - AP: 0.3943531747470692
++ Class '15' (public transportation) - AP: 0.6130271244728347
++ Class '16' (tree) - AP: 0.3557814416806443
+mf1: 0.08982061491843858
+mAP: 0.48770884909163986
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.32078205787896985
++ Class '1' (marking) - AP: 0.5887007572966261
++ Class '2' (right barriers) - AP: 0.5925788826342644
++ Class '3' (left barriers) - AP: 0.9226973849469515
++ Class '4' (light pole) - AP: 0.6098515160255966
++ Class '5' (right curb) - AP: 0.44011431675995516
++ Class '6' (left curb) - AP: 0.6937659487481044
++ Class '7' (fence) - AP: 0.3036221330121107
++ Class '8' (building) - AP: 0.2620724501828415
++ Class '9' (billboard) - AP: 0.5548617659162931
++ Class '10' (pedestrian) - AP: 0.4321834580694799
++ Class '11' (car) - AP: 0.7465928736310897
++ Class '12' (bus) - AP: 0.0
++ Class '13' (motorcycle) - AP: 0.36159387592951486
++ Class '14' (heavy vehicle) - AP: 0.3987252148080287
++ Class '15' (public transportation) - AP: 0.5824977361762986
++ Class '16' (tree) - AP: 0.3820139041165813
+mf1: 0.11937745870119268
+mAP: 0.48192083977251216
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.2918165536681966
++ Class '1' (marking) - AP: 0.5114967389228451
++ Class '2' (right barriers) - AP: 0.5065686867672377
++ Class '3' (left barriers) - AP: 0.8905175864564225
++ Class '4' (light pole) - AP: 0.5956865538099025
++ Class '5' (right curb) - AP: 0.5412199789447442
++ Class '6' (left curb) - AP: 0.6024684207523414
++ Class '7' (fence) - AP: 0.31141198561450767
++ Class '8' (building) - AP: 0.2804191179561599
++ Class '9' (billboard) - AP: 0.49266089996522966
++ Class '10' (pedestrian) - AP: 0.3993811846159788
++ Class '11' (car) - AP: 0.7290117724711185
++ Class '12' (bus) - AP: 0.0
++ Class '13' (motorcycle) - AP: 0.39900477247251437
++ Class '14' (heavy vehicle) - AP: 0.3390341153108016
++ Class '15' (public transportation) - AP: 0.5812067591487422
++ Class '16' (tree) - AP: 0.3149954861586456
+mf1: 0.07626931340970629
+mAP: 0.4580529772373758
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.3636491153787095
++ Class '1' (marking) - AP: 0.5150698870122974
++ Class '2' (right barriers) - AP: 0.48828478886576965
++ Class '3' (left barriers) - AP: 0.8884159410039012
++ Class '4' (light pole) - AP: 0.6276239125388143
++ Class '5' (right curb) - AP: 0.43074770687494934
++ Class '6' (left curb) - AP: 0.5487378751823325
++ Class '7' (fence) - AP: 0.2848843589915129
++ Class '8' (building) - AP: 0.30887979141714555
++ Class '9' (billboard) - AP: 0.536334928360768
++ Class '10' (pedestrian) - AP: 0.41129756755637326
++ Class '11' (car) - AP: 0.7454380086157468
++ Class '12' (bus) - AP: 0.003289473684210526
++ Class '13' (motorcycle) - AP: 0.46734335839598995
++ Class '14' (heavy vehicle) - AP: 0.4057917745143575
++ Class '15' (public transportation) - AP: 0.6336567926745488
++ Class '16' (tree) - AP: 0.39321754958111543
+mf1: 0.09467826023953622
+mAP: 0.4736860488616789
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.3323363581184041
++ Class '1' (marking) - AP: 0.6098035222165343
++ Class '2' (right barriers) - AP: 0.4937539059022631
++ Class '3' (left barriers) - AP: 0.9157841799199562
++ Class '4' (light pole) - AP: 0.5907756274403622
++ Class '5' (right curb) - AP: 0.49029324121011825
++ Class '6' (left curb) - AP: 0.6867616799287001
++ Class '7' (fence) - AP: 0.28572573639224613
++ Class '8' (building) - AP: 0.29259243137678326
++ Class '9' (billboard) - AP: 0.5513120486239718
++ Class '10' (pedestrian) - AP: 0.3632218960569925
++ Class '11' (car) - AP: 0.7534924173743242
++ Class '12' (bus) - AP: 0.05263157894736842
++ Class '13' (motorcycle) - AP: 0.44374277627509046
++ Class '14' (heavy vehicle) - AP: 0.4264404906552
++ Class '15' (public transportation) - AP: 0.6243017662888215
++ Class '16' (tree) - AP: 0.3821803384756754
+mf1: 0.1100953657321957
+mAP: 0.4879499997178125
+Average Precisions:
++ Class '0' (traffic sign) - AP: 0.33421828907920004
++ Class '1' (marking) - AP: 0.5492356713736188
++ Class '2' (right barriers) - AP: 0.4932827596494085
++ Class '3' (left barriers) - AP: 0.9242292235741293
++ Class '4' (light pole) - AP: 0.6120128168158723
++ Class '5' (right curb) - AP: 0.52618026736411
++ Class '6' (left curb) - AP: 0.6756148870685393
++ Class '7' (fence) - AP: 0.3134447843474625
++ Class '8' (building) - AP: 0.31507243425031184
++ Class '9' (billboard) - AP: 0.5729620781640196
++ Class '10' (pedestrian) - AP: 0.4130322538730061
++ Class '11' (car) - AP: 0.774353799842901
++ Class '12' (bus) - AP: 0.0
++ Class '13' (motorcycle) - AP: 0.32557656283072756
++ Class '14' (heavy vehicle) - AP: 0.4100930092847541
++ Class '15' (public transportation) - AP: 0.615857250810678
++ Class '16' (tree) - AP: 0.3890282148288793
+mf1: 0.11075052060649564
+mAP: 0.4849526060680952

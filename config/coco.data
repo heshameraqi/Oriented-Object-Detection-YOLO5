@@ -1,0 +1,6 @@
+classes= 17
+train=train.txt
+valid=val.txt
+names=data/classes.txt
+backup=backup/
+eval=mAP(.5)

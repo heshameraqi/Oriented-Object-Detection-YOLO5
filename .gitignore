@@ -1,0 +1,12 @@
+__pycache__/
+weights/*.pth
+weights/*.weights
+scripts/output/
+checkpoints/
+output/
+data/data/
+logs/
+detect_results/
+train.txt
+val.txt
+nohup.out

@@ -28,7 +28,7 @@ parser.add_argument('--weights_path', type=str, default='checkpoints/yolov3_ckpt
 parser.add_argument('--class_path', type=str, default='./scripts/data/classes.txt', help='path to class label file')
 parser.add_argument('--conf_thres', type=float, default=0.8, help='object confidence threshold')
 parser.add_argument('--nms_thres', type=float, default=0.4, help='iou thresshold for non-maximum suppression')
-parser.add_argument('--batch_size', type=int, default=50, help='size of the batches')
+parser.add_argument('--batch_size', type=int, default=30, help='size of the batches')
 parser.add_argument('--n_cpu', type=int, default=0, help='number of cpu threads to use during batch generation')
 parser.add_argument('--img_size', type=int, default=416, help='size of each image dimension')
 parser.add_argument('--sampels_number', type=float, default=9000, help='number of sampels to output')
@@ -97,13 +97,11 @@ colors = [cmap(i) for i in np.linspace(0, 1, 20)]
 print("\nSaving images:")
 # Iterate through images and save plot of detections
 for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
-
     print("(%d) Image: '%s'" % (img_i, path))
 
     # Create plot
     img = np.array(Image.open(path))
     height, width, depth = img.shape
-
     if opt.output_type == 'image' or opt.output_type == 'text':
         # What size does the figure need to be in inches to fit the image?
         figsize = width / float(80), height / float(80)
@@ -158,19 +156,20 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
     p4_y = ((p4_y - pad_y // 2) / unpad_h) * img.shape[0]
 
     # Draw bounding boxes and labels of detections
+    img_path = path  # to be used later
     if detections is not None:
-
         if opt.output_type == 'text':
+            detections_2 = detections.copy()
             # for labels to text file
-            detections[:, 0] = ((p1_x + p2_x + p3_x + p4_x) / 4)
-            detections[:, 1] = ((p1_y + p2_y + p3_y + p4_y) / 4)
+            detections_2[:, 0] = ((p1_x + p2_x + p3_x + p4_x) / 4)
+            detections_2[:, 1] = ((p1_y + p2_y + p3_y + p4_y) / 4)
 
             dim1 = np.sqrt((p2_x - p1_x) ** 2 + (p2_y - p1_y) ** 2)
             dim2 = np.sqrt((p3_x - p2_x) ** 2 + (p3_y - p2_y) ** 2)
-            detections[:, 3] = np.min([dim1, dim2], axis=0)  # width
-            detections[:, 2] = np.max([dim1, dim2], axis=0)  # lenght
+            detections_2[:, 3] = np.min([dim1, dim2], axis=0)  # width
+            detections_2[:, 2] = np.max([dim1, dim2], axis=0)  # lenght
 
-            out = np.concatenate([detections[:, -1:], detections[:, :5]], axis=1)
+            out = np.concatenate([detections_2[:, -1:], detections_2[:, :5]], axis=1)
 
             with open("./detect_results/" + path.replace(".png", ".txt").replace(".jpg", ".txt").replace(
                 opt.image_folder, ''), 'w') as file:
@@ -186,7 +185,6 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
             n_cls_preds = len(unique_labels)
             bbox_colors = random.sample(colors, n_cls_preds)
             for i, (x, y, w, le, theta, conf, cls_conf, cls_pred) in enumerate(detections):
-
                 #if cls_pred != 0: continue  #to display specific objects
 
                 print("\t+ Label: %s, Conf: %.5f, angel : %.5f" % (classes[int(cls_pred)], cls_conf.item(), theta))
@@ -205,23 +203,18 @@ for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
                 # Add the bbox to the plot
                 ax.add_patch(obbox)
                 # Add label
-                plt.text(
-                    x,
-                    y,
-                    s=classes[int(cls_pred)],
-                    color="white",
-                    verticalalignment="top",
-                    bbox={"color": color, "pad": 0},
-                )
+                plt.text(x, y, s=classes[int(cls_pred)], color="white",
+                         verticalalignment="top", bbox={"color": color, "pad": 0})
 
-    """if opt.output_type == 'image' or opt.output_type == 'text':
+    if opt.output_type == 'image' or opt.output_type == 'text':
         # Save generated image with detections
         plt.axis("off")
         plt.gca().xaxis.set_major_locator(NullLocator())
         plt.gca().yaxis.set_major_locator(NullLocator())
-        plt.savefig("./detect_results/%d.png" % (img_i), bbox_inches="tight", pad_inches=0.0)
-        #plt.show()
-        plt.close()"""
+        file = "./detect_results/" + img_path.replace(opt.image_folder, '')
+        plt.savefig(file.replace("txt", "jpg"), bbox_inches="tight", pad_inches=0.0)
+        # plt.show()
+        plt.close()
 
 
 

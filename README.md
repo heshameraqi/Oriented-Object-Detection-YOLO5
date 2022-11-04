@@ -9,7 +9,7 @@
 - Dataset download link: https://drive.google.com/file/d/1N3Q8Rehgyxjc7wwpKR3UA9MXndhs80o0/view?usp=sharing
 - Based on the YOLOv3 implementation: Minimal implementation of YOLOv3 in PyTorch upgraded to support oriented bounding boxes detection (OBB).
 
-[![Automatic Roadway Features Detection with Oriented Object Detection](assets/Roadway%20Features%20Detection.png?raw=true | width=200)]([https://www.youtube.com/watch?v=v3DaKJL-HCQ](https://www.mdpi.com/2076-3417/11/8/3531))
+[![Automatic Roadway Features Detection with Oriented Object Detection](assets/Roadway%20Features%20Detection.png?raw=true)]([https://www.youtube.com/watch?v=v3DaKJL-HCQ](https://www.mdpi.com/2076-3417/11/8/3531))
 
 <p align="center"><img src="assets/obb.png" width="480"\></p>
 

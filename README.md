@@ -5,9 +5,15 @@
 > Hesham M. Eraqi et al. Automatic Roadway Features Detection with Oriented Object Detection. Journal of Intelligent Transportation Systems. Applied Sciences (ISSN 2076-3417), 11(8), 2021.
 
 Data Annotation Tool for oriented objects (with Mouse right click): https://github.com/heshameraqi/labelImg_OBB
+
 Get the model checkpoint from: https://drive.google.com/file/d/13XZCTY5FSHIOMsWjiKbhM1MBqWNHtO07/view?usp=sharing
+
 Dataset download link: https://drive.google.com/file/d/1N3Q8Rehgyxjc7wwpKR3UA9MXndhs80o0/view?usp=sharing
+
 Based on the YOLOv3 implementation: Minimal implementation of YOLOv3 in PyTorch upgraded to support oriented bounding boxes detection (OBB).
+
+[![Automatic Roadway Features Detection with Oriented Object Detection](assets/Roadway%20Features%20Detection.png?raw=true | width=400)]([https://www.youtube.com/watch?v=v3DaKJL-HCQ](https://www.mdpi.com/2076-3417/11/8/3531))
+
 
 [![Automatic Roadway Features Detection with Oriented Object Detection](assets/Roadway%20Features%20Detection.png?raw=true)]([https://www.youtube.com/watch?v=v3DaKJL-HCQ](https://www.mdpi.com/2076-3417/11/8/3531))
 

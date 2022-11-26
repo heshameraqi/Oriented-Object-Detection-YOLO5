@@ -3,6 +3,7 @@
 > **Cite our Work:**
 > 
 > Hesham M. Eraqi et al. Automatic Roadway Features Detection with Oriented Object Detection. Journal of Intelligent Transportation Systems. Applied Sciences (ISSN 2076-3417), 11(8), 2021.
+https://www.mdpi.com/2076-3417/11/8/3531
 
 - Data Annotation Tool for oriented objects (with Mouse right click): https://github.com/heshameraqi/labelImg_OBB
 - Get the model checkpoint from: https://drive.google.com/file/d/13XZCTY5FSHIOMsWjiKbhM1MBqWNHtO07/
